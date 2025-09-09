@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # React-mini-shop-zustand
 React mini shop e-commerce using state management with zustand
-=======
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,4 +69,3 @@ export default tseslint.config([
   },
 ])
 ```
->>>>>>> 67e5c87 (All Code)
