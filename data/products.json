@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Aurora Headphones",
+      "price": 129.99,
+      "desc": "Premium sound."
+    },
+    {
+      "id": 2,
+      "name": "Nebula Keyboard",
+      "price": 99.0,
+      "desc": "Mechanical keys."
+    },
+    {
+      "id": 3,
+      "name": "Quantum Mouse",
+      "price": 59.5,
+      "desc": "Ergonomic design."
+    },
+    {
+      "id": 4,
+      "name": "Stellar Monitor",
+      "price": 289.0,
+      "desc": "Ultra HD display."
+    },
+    {
+      "id": 5,
+      "name": "Cosmic Webcam",
+      "price": 79.0,
+      "desc": "Crystal clear."
+    },
+    {
+      "id": 6,
+      "name": "Lunar Mic",
+      "price": 149.0,
+      "desc": "Studio quality."
+    }
+  ]
