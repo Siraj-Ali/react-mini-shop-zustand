@@ -13,7 +13,7 @@ export const ProductDetail = () => {
   const wishedItems = Object.values(wishlistObj);
 
   useEffect(() => {
-    fetch("/src/data/products.json")
+    fetch("/react-mini-shop-zustand/data/products.json")
     .then(resp => resp.json())
     .then((list) => setProduct(list.find((item:any) => String(item.id) === String(id))))
   }, [])

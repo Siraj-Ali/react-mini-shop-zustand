@@ -17,7 +17,8 @@ export default function Header() {
   useEffect(() => {
     setTotalCartItemCount(cartItems.reduce((a, i) => a + i.qty, 0));
     setTotalWishedItemCount(wishedItems.length)
-  }, [])
+    console.log('totalCartItemCount', totalCartItemCount);
+  }, [cartItems, wishedItems])
   return (
     <header className="header">
       <div className="container nav">

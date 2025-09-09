@@ -13,7 +13,7 @@ export const Products = () => {
     const [isLoading, setIsLoading] = useState(false);
 useEffect(() => {
     setIsLoading(true)
-    fetch("/src/data/products.json")
+    fetch("/react-mini-shop-zustand/data/products.json")
     .then(resp => resp.json())
     .then((data: ProductType[]) => {
         setProducts(data)
