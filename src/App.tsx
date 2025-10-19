@@ -8,6 +8,7 @@ import { Wishlist } from './pages/Whishlist';
 import Header from './components/Header';
 import { Login } from './pages/Login';
 import { useAuthStore } from './stores/authStore';
+import { PlaceOrder } from './pages/PlaceOrder';
 
 function Protected({ children }: any) {
   const user = useAuthStore((state) => state.user);
@@ -30,6 +31,7 @@ function App() {
         <Route path='/cart' element={<Protected><Cart /></Protected>} />
         <Route path='/wishlist' element={<Wishlist />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/checkout' element={<PlaceOrder />} />
         <Route path='*' element={<h2>Page not found</h2>} />
       </Routes>
     </>

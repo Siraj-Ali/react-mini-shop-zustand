@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useCartStore } from "../stores/cartStore"
+import { Navigate, useNavigate } from "react-router-dom";
 
 export const Cart = () => {
     
@@ -10,6 +11,8 @@ export const Cart = () => {
     const decrease = useCartStore((state) => state.decrease);
     const remove = useCartStore((state) => state.remove);
     const cartItem = Object.values(cartItemsObject);
+
+    const navigate = useNavigate();
     
     useEffect(() => {
         const totalPrice = cartItem.reduce((a,i) => a + i.qty * (i.price ?? 0), 0);
@@ -77,7 +80,22 @@ export const Cart = () => {
                 </div>
                 </div>
             )}
+            <div className="btn-place-order"
+            style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    marginTop: 12,
+                    }}>
+                 <button
+                        className="btn"
+                        onClick={() => navigate("/checkout")}
+                        style={{ background: "#127310ff" }}
+                        >
+                        Checkout
+                        </button>
             </div>
+            </div>
+        
         </>
     )
 }
