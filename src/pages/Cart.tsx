@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useCartStore } from "../stores/cartStore"
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Cart = () => {
     

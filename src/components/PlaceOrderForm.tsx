@@ -11,6 +11,7 @@ const initialForm: OrderFormData = {
 };
 
 function orderReducer(state: OrderState, action: OrderState): OrderState {
+    console.log(state);
     switch(action.status) {
         case "submitting": return {status: "submitting"};
         
